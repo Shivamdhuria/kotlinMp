@@ -36,15 +36,15 @@ kotlin {
     }
     iosTarget("iOS") {}
 
-    val sdkName: String? = System.getenv("SDK_NAME")
-    val isWatchOSDevice = sdkName.orEmpty().startsWith("watchos")
-    if (isWatchOSDevice) {
-        watchosArm64("watch")
-    } else {
-        watchosX64("watch")
-    }
+//    val sdkName: String? = System.getenv("SDK_NAME")
+//    val isWatchOSDevice = sdkName.orEmpty().startsWith("watchos")
+//    if (isWatchOSDevice) {
+//        watchosArm64("watch")
+//    } else {
+//        watchosX64("watch")
+//    }
 
-    macosX64("macOS")
+//    macosX64("macOS")
     android()
     jvm()
 
@@ -54,10 +54,10 @@ kotlin {
         homepage = "https://github.com/joreilly/PeopleInSpace"
     }
 
-    js(IR) {
-        useCommonJs()
-        browser()
-    }
+//    js(IR) {
+//        useCommonJs()
+//        browser()
+//    }
 
     sourceSets {
         sourceSets["commonMain"].dependencies {
@@ -100,9 +100,9 @@ kotlin {
             implementation(Deps.Ktor.clientAndroid)
             implementation(Deps.SqlDelight.androidDriver)
         }
-        sourceSets["androidTest"].dependencies {
-            implementation(Deps.Test.junit)
-        }
+//        sourceSets["androidTest"].dependencies {
+//            implementation(Deps.Test.junit)
+//        }
 
         sourceSets["jvmMain"].dependencies {
             implementation(Deps.Ktor.clientJava)
@@ -114,22 +114,22 @@ kotlin {
             implementation(Deps.Ktor.clientIos)
             implementation(Deps.SqlDelight.nativeDriver)
         }
-        sourceSets["iOSTest"].dependencies {
-        }
+//        sourceSets["iOSTest"].dependencies {
+//        }
 
-        sourceSets["watchMain"].dependencies {
-            implementation(Deps.Ktor.clientIos)
-            implementation(Deps.SqlDelight.nativeDriver)
-        }
+//        sourceSets["watchMain"].dependencies {
+//            implementation(Deps.Ktor.clientIos)
+//            implementation(Deps.SqlDelight.nativeDriver)
+//        }
+//
+//        sourceSets["macOSMain"].dependencies {
+//            implementation(Deps.Ktor.clientIos)
+//            implementation(Deps.SqlDelight.nativeDriverMacos)
+//        }
 
-        sourceSets["macOSMain"].dependencies {
-            implementation(Deps.Ktor.clientIos)
-            implementation(Deps.SqlDelight.nativeDriverMacos)
-        }
-
-        sourceSets["jsMain"].dependencies {
-            implementation(Deps.Ktor.clientJs)
-        }
+//        sourceSets["jsMain"].dependencies {
+//            implementation(Deps.Ktor.clientJs)
+//        }
     }
 }
 

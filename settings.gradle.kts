@@ -15,8 +15,3 @@ pluginManagement {
 rootProject.name = "PeopleInSpace"
 
 include(":app", ":common", ":compose-desktop")
-include(":wearApp")
-include(":web")
-include(":compose-web")
-include(":backend")
-include(":graphql-server")

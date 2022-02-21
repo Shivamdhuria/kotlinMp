@@ -1,9 +1,25 @@
 package com.surrus.peopleinspace.di
 
-import com.surrus.peopleinspace.ui.PeopleInSpaceViewModel
-import org.koin.androidx.viewmodel.dsl.viewModel
-import org.koin.dsl.module
+import android.content.Context
+import com.surrus.peopleinspace.BaseApplication
+import dagger.Module
+import dagger.Provides
+import dagger.hilt.InstallIn
+import dagger.hilt.android.qualifiers.ApplicationContext
+import dagger.hilt.components.SingletonComponent
+import javax.inject.Singleton
 
-val appModule = module {
-    viewModel { PeopleInSpaceViewModel(get()) }
+@Module
+@InstallIn(SingletonComponent::class)
+object AppModule {
+
+    @Singleton
+    @Provides
+    fun provideApplication(@ApplicationContext app: Context): BaseApplication {
+        return app as BaseApplication
+    }
+
 }
+
+
+
