@@ -1,4 +1,4 @@
-package me.abc.android.presentation.ui.dog_list
+package com.surrus.peopleinspace.presentation.ui.dog_list
 
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.LazyColumn
@@ -13,7 +13,6 @@ import com.surrus.common.domain.Dog
 import kotlinx.coroutines.ExperimentalCoroutinesApi
 import com.surrus.peopleinspace.presentation.components.PuppyListItem
 import com.surrus.peopleinspace.presentation.theme.PawsTheme
-import com.surrus.peopleinspace.presentation.ui.dog_list.DogListViewModel
 
 @Composable
 fun DogListScreen(viewModel: DogListViewModel, navController: NavController) {

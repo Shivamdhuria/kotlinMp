@@ -13,7 +13,7 @@ import androidx.navigation.compose.rememberNavController
 import com.surrus.peopleinspace.presentation.navigation.Screen
 import com.surrus.peopleinspace.presentation.theme.PawsTheme
 import dagger.hilt.android.AndroidEntryPoint
-import me.abc.android.presentation.ui.dog_list.DogListScreen
+import com.surrus.peopleinspace.presentation.ui.dog_list.DogListScreen
 import com.surrus.peopleinspace.presentation.ui.dog_list.DogListViewModel
 
 @AndroidEntryPoint
