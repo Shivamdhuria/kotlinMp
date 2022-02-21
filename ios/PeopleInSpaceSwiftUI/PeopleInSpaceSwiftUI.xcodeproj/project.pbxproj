@@ -27,6 +27,7 @@
 		1E1255057DE614781855FC02 /* libPods-PeopleInSpaceSwiftUI.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 28681F6577A67864E2C2D9B4 /* libPods-PeopleInSpaceSwiftUI.a */; };
 		655C668027C431D00092B83A /* DogItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655C667F27C431D00092B83A /* DogItemView.swift */; };
 		655C668227C432560092B83A /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655C668127C432560092B83A /* ErrorView.swift */; };
+		655C668427C433E00092B83A /* DogListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655C668327C433E00092B83A /* DogListViewModel.swift */; };
 		EB26652EEED4D2D4BCFA681D /* libPods-PeopleInSpaceWidgetExtension.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0873B836B9801BC514F9A555 /* libPods-PeopleInSpaceWidgetExtension.a */; };
 /* End PBXBuildFile section */
 
@@ -79,6 +80,7 @@
 		56CD7101BBBC60F561BFB049 /* Pods-PeopleInSpaceSwiftUI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PeopleInSpaceSwiftUI.release.xcconfig"; path = "Target Support Files/Pods-PeopleInSpaceSwiftUI/Pods-PeopleInSpaceSwiftUI.release.xcconfig"; sourceTree = "<group>"; };
 		655C667F27C431D00092B83A /* DogItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogItemView.swift; sourceTree = "<group>"; };
 		655C668127C432560092B83A /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
+		655C668327C433E00092B83A /* DogListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogListViewModel.swift; sourceTree = "<group>"; };
 		BD4D317D12DFE46788F27B26 /* Pods-PeopleInSpaceWidgetExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PeopleInSpaceWidgetExtension.release.xcconfig"; path = "Target Support Files/Pods-PeopleInSpaceWidgetExtension/Pods-PeopleInSpaceWidgetExtension.release.xcconfig"; sourceTree = "<group>"; };
 		E9A29AFE5FFFB564C509840A /* Pods-PeopleInSpaceSwiftUI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PeopleInSpaceSwiftUI.debug.xcconfig"; path = "Target Support Files/Pods-PeopleInSpaceSwiftUI/Pods-PeopleInSpaceSwiftUI.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -162,6 +164,7 @@
 				1ABD44F923B00008008387E3 /* ViewModel.swift */,
 				1AA82EEC25052E1E00193051 /* ImageView.swift */,
 				1AD2EC6925E9984900CCEE81 /* ISSMapView.swift */,
+				655C668327C433E00092B83A /* DogListViewModel.swift */,
 			);
 			path = PeopleInSpaceSwiftUI;
 			sourceTree = "<group>";
@@ -355,6 +358,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				655C668427C433E00092B83A /* DogListViewModel.swift in Sources */,
 				1AA82EED25052E1E00193051 /* ImageView.swift in Sources */,
 				1ABFB8BE23AFF5CC003D807E /* AppDelegate.swift in Sources */,
 				1ABFB8C023AFF5CC003D807E /* SceneDelegate.swift in Sources */,
