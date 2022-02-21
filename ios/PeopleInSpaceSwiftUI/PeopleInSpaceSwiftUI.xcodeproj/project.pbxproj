@@ -25,6 +25,8 @@
 		1ABFB8CA23AFF5CE003D807E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1ABFB8C823AFF5CE003D807E /* LaunchScreen.storyboard */; };
 		1AD2EC6A25E9984900CCEE81 /* ISSMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD2EC6925E9984900CCEE81 /* ISSMapView.swift */; };
 		1E1255057DE614781855FC02 /* libPods-PeopleInSpaceSwiftUI.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 28681F6577A67864E2C2D9B4 /* libPods-PeopleInSpaceSwiftUI.a */; };
+		655C668027C431D00092B83A /* DogItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655C667F27C431D00092B83A /* DogItemView.swift */; };
+		655C668227C432560092B83A /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655C668127C432560092B83A /* ErrorView.swift */; };
 		EB26652EEED4D2D4BCFA681D /* libPods-PeopleInSpaceWidgetExtension.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0873B836B9801BC514F9A555 /* libPods-PeopleInSpaceWidgetExtension.a */; };
 /* End PBXBuildFile section */
 
@@ -75,6 +77,8 @@
 		1AD2EC6925E9984900CCEE81 /* ISSMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ISSMapView.swift; sourceTree = "<group>"; };
 		28681F6577A67864E2C2D9B4 /* libPods-PeopleInSpaceSwiftUI.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PeopleInSpaceSwiftUI.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		56CD7101BBBC60F561BFB049 /* Pods-PeopleInSpaceSwiftUI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PeopleInSpaceSwiftUI.release.xcconfig"; path = "Target Support Files/Pods-PeopleInSpaceSwiftUI/Pods-PeopleInSpaceSwiftUI.release.xcconfig"; sourceTree = "<group>"; };
+		655C667F27C431D00092B83A /* DogItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogItemView.swift; sourceTree = "<group>"; };
+		655C668127C432560092B83A /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
 		BD4D317D12DFE46788F27B26 /* Pods-PeopleInSpaceWidgetExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PeopleInSpaceWidgetExtension.release.xcconfig"; path = "Target Support Files/Pods-PeopleInSpaceWidgetExtension/Pods-PeopleInSpaceWidgetExtension.release.xcconfig"; sourceTree = "<group>"; };
 		E9A29AFE5FFFB564C509840A /* Pods-PeopleInSpaceSwiftUI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PeopleInSpaceSwiftUI.debug.xcconfig"; path = "Target Support Files/Pods-PeopleInSpaceSwiftUI/Pods-PeopleInSpaceSwiftUI.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -147,6 +151,7 @@
 		1ABFB8BC23AFF5CC003D807E /* PeopleInSpaceSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				655C667E27C431BE0092B83A /* Views */,
 				1ABFB8BD23AFF5CC003D807E /* AppDelegate.swift */,
 				1ABFB8BF23AFF5CC003D807E /* SceneDelegate.swift */,
 				1ABFB8C123AFF5CC003D807E /* ContentView.swift */,
@@ -167,6 +172,15 @@
 				1ABFB8C623AFF5CE003D807E /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		655C667E27C431BE0092B83A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				655C667F27C431D00092B83A /* DogItemView.swift */,
+				655C668127C432560092B83A /* ErrorView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		D0F1ED5C992B526EA33236F9 /* Frameworks */ = {
@@ -346,7 +360,9 @@
 				1ABFB8C023AFF5CC003D807E /* SceneDelegate.swift in Sources */,
 				1AD2EC6A25E9984900CCEE81 /* ISSMapView.swift in Sources */,
 				1ABD44FA23B00008008387E3 /* ViewModel.swift in Sources */,
+				655C668027C431D00092B83A /* DogItemView.swift in Sources */,
 				1ABFB8C223AFF5CC003D807E /* ContentView.swift in Sources */,
+				655C668227C432560092B83A /* ErrorView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
