@@ -2,7 +2,7 @@ package com.surrus.common.network.models
 
 import com.surrus.common.domain.Dog
 import com.surrus.common.domain.util.DomainMapper
-import com.surrus.common.repository.timestamp
+import com.surrus.common.timestamp
 
 class DogDtoMapper : DomainMapper<String, Dog> {
 

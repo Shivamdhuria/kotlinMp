@@ -1,4 +1,4 @@
-package com.surrus.common.repository
+package com.surrus.common
 
 import org.koin.core.module.Module
 

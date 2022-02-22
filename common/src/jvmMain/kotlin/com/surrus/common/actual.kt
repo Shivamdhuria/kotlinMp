@@ -1,4 +1,4 @@
-package com.surrus.common.repository
+package com.surrus.common
 
 import java.time.LocalTime
 
