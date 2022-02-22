@@ -24,11 +24,11 @@ struct DogItemView: View {
                     .frame(width: .infinity, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                     .lineLimit(1)
                 
-                Text(dog.timestamp)
-                    .foregroundColor(Color.black)
-                    .font(.system(size: 18, weight: .regular))
-                    .frame(width: .infinity, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
-                    .lineLimit(1)
+//                Text(dog.timestamp)
+//                    .foregroundColor(Color.black)
+//                    .font(.system(size: 18, weight: .regular))
+//                    .frame(width: .infinity, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+//                    .lineLimit(1)
 
             } .cornerRadius(30.0)
             Spacer()

@@ -51,7 +51,7 @@ fun PuppyListItem(dog: Dog) {
                 ) {
                     Text(text = dog.breed, style = typography.h6)
                     Text(text = dog.rating, style = typography.caption)
-                    Text(text = dog.timestamp, style = typography.caption)
+//                    Text(text = dog.timestamp, style = typography.caption)
 
                 }
             }

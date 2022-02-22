@@ -15,7 +15,7 @@ class DogDtoMapper : DomainMapper<String, Dog> {
             breed = extractBreedName(url = url),
             rating = (10..20).random().toString() + "/10",
             imageUrl = url,
-            timestamp = timestamp()
+//            timestamp = timestamp()
         )
     }
 

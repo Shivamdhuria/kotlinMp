@@ -4,5 +4,5 @@ data class Dog(
     val breed: String,
     val rating: String,
     val imageUrl: String,
-    val timestamp: String = ""
+//    val timestamp: String = ""
 )
