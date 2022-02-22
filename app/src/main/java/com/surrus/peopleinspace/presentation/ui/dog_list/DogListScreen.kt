@@ -17,7 +17,7 @@ import com.surrus.peopleinspace.presentation.theme.PawsTheme
 @Composable
 fun DogListScreen(viewModel: DogListViewModel, navController: NavController) {
 
-    val dogs = viewModel.recipes.value
+    val dogs = viewModel.dogs.value
 
     PawsTheme() {
         Box() {

@@ -9,7 +9,7 @@ struct DogItemView: View {
         HStack{
             Spacer()
             VStack(){
-                ImageView(withURL: dog.imageUrl ?? "", width: 300, height: 300)
+                ImageView(withURL: dog.imageUrl, width: 300, height: 300)
                 let breedName = dog.breed
                 Text(breedName)
                     .foregroundColor(Color.gray)

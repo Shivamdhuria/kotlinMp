@@ -15,7 +15,7 @@ import javax.inject.Inject
 @HiltViewModel
 class DogListViewModel @Inject constructor(private val getDogs: GetDogs) : ViewModel() {
 
-    val recipes: MutableState<List<Dog>> = mutableStateOf(ArrayList())
+    val dogs: MutableState<List<Dog>> = mutableStateOf(ArrayList())
     private val loading = mutableStateOf(false)
 
     init {
@@ -43,9 +43,9 @@ class DogListViewModel @Inject constructor(private val getDogs: GetDogs) : ViewM
      * Append new dogs to the current list of recipes
      */
     private fun appendDogs(recipes: List<Dog>) {
-        val current = ArrayList(this.recipes.value)
+        val current = ArrayList(this.dogs.value)
         current.addAll(recipes)
-        this.recipes.value = current
+        this.dogs.value = current
     }
 }
 

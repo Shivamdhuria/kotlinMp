@@ -1,6 +1,5 @@
 package com.surrus.peopleinspace
 
-//import me.abc.library.Greeting
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
@@ -29,25 +28,6 @@ class MainActivity : ComponentActivity() {
                         navController = navController,
                         startDestination = Screen.DogList.route
                     ) {
-//                        composable(route = Screen.DogDetail.route + "/{dog}",
-//                            arguments = listOf(navArgument("dog") {
-//                                type = NavType.StringType
-//                            })
-//                        ) { navBackStackEntry ->
-//                            val factory =
-//                                HiltViewModelFactory(LocalContext.current, navBackStackEntry)
-//                            val viewModel =
-//                                viewModel<DogDetailViewModel>("DogDetailViewModel", factory)
-//                            navBackStackEntry.arguments?.getString("dog")?.let { json->
-//                                val dog = Gson().fromJson(json, Dog::class.java)
-//                                DogDetailScreen(
-//                                    dog = dog,
-//                                    viewModel = viewModel,
-//                                )
-//                            }
-//
-//                        }
-
                         composable(
                             route = Screen.DogList.route
                         ) { navBackStackEntry ->
@@ -60,7 +40,6 @@ class MainActivity : ComponentActivity() {
                             )
                         }
                     }
-
                 }
             }
         }

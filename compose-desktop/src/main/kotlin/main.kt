@@ -154,7 +154,7 @@ fun PuppyListItem(dog: Dog) {
                         contentScale = ContentScale.Crop,
                         modifier = Modifier
                             .padding(8.dp)
-                            .width(300.dp)
+                            .fillMaxWidth()
                             .height(300.dp)
                             .clip(RoundedCornerShape(corner = CornerSize(16.dp)))
                     )
