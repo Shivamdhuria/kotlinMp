@@ -8,7 +8,7 @@ import com.surrus.common.domain.util.asCommonFlow
 import com.surrus.common.network.DogService
 import com.surrus.common.network.models.DogDtoMapper
 
-class GetDogs(private val recipeService: DogService, private val dtoMapper: DogDtoMapper) {
+class GetDogs(private val dogService: DogService, private val dtoMapper: DogDtoMapper) {
 
     @Throws(Exception::class)
     fun execute(): CommonFlow<DataState<List<Dog>>> = flow {
@@ -22,7 +22,7 @@ class GetDogs(private val recipeService: DogService, private val dtoMapper: DogD
     }.asCommonFlow()
 
      suspend fun getDogsFromNetwork(): List<Dog> {
-        val dogDtos = recipeService.getDogs().message
+        val dogDtos = dogService.getDogs().message
         return dtoMapper.toDomainList(dogDtos)
     }
 }
