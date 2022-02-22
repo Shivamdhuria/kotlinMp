@@ -38,9 +38,6 @@ fun DogListScreen(viewModel: DogListViewModel, navController: NavController) {
 @ExperimentalCoroutinesApi
 @Composable
 fun DogList(dogs: List<Dog>) {
-//    Column {
-//        dogs.forEach { DogItemCard(it, onClick = {}) }
-//    }
 
     LazyColumn(
         contentPadding = PaddingValues(horizontal = 16.dp, vertical = 8.dp)

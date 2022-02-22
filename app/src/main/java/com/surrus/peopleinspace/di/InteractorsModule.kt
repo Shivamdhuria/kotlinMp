@@ -1,6 +1,5 @@
 package com.surrus.peopleinspace.di
 
-
 import com.surrus.common.interactors.GetDogs
 import com.surrus.common.network.DogService
 import com.surrus.common.network.models.DogDtoMapper
@@ -16,37 +15,8 @@ object InteractorsModule {
 
     @ViewModelScoped
     @Provides
-    fun provideGetDogs(recipeService: DogService, dtoMapper: DogDtoMapper, ) =
-        GetDogs(recipeService = recipeService, dtoMapper)
-//
-//  @ViewModelScoped
-//  @Provides
-//  fun provideRestoreRecipes(
-//    recipeDao: RecipeDao,
-//    recipeEntityMapper: RecipeEntityMapper,
-//  ): RestoreRecipes {
-//    return RestoreRecipes(
-//      recipeDao = recipeDao,
-//      entityMapper = recipeEntityMapper,
-//    )
-//  }
-//
-//  @ViewModelScoped
-//  @Provides
-//  fun provideGetRecipe(
-//    recipeDao: RecipeDao,
-//    recipeEntityMapper: RecipeEntityMapper,
-//    recipeService: RecipeService,
-//    recipeDtoMapper: RecipeDtoMapper,
-//  ): GetRecipe {
-//    return GetRecipe(
-//      recipeDao = recipeDao,
-//      entityMapper = recipeEntityMapper,
-//      recipeService = recipeService,
-//      recipeDtoMapper = recipeDtoMapper,
-//    )
-//  }
-
+    fun provideGetDogs(dogService: DogService, dtoMapper: DogDtoMapper, ) =
+        GetDogs(dogService = dogService, dtoMapper)
 }
 
 

@@ -24,19 +24,6 @@ class DogServiceImpl: DogService {
             }
     }
 
-//    fun createHttpClient(httpClientEngine: HttpClientEngine, json: Json, enableNetworkLogs: Boolean) = HttpClient(httpClientEngine) {
-//        install(ContentNegotiation) {
-//            json(json)
-//        }
-//        if (enableNetworkLogs) {
-//            install(Logging) {
-//                logger = Logger.DEFAULT
-//                level = LogLevel.INFO
-//            }
-//        }
-//    }
-
-
     override suspend fun getDogs(): DogDto {
         return client.get("$BASE_URL/breeds/image/random/4").body<DogDto>()
     }
