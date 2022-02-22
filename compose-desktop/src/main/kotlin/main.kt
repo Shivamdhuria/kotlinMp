@@ -91,7 +91,7 @@ fun fetchImage(url: String): ImageBitmap? {
 
     LaunchedEffect(url) {
         loadFullImage(url)?.let {
-            image =  org.jetbrains.skia.Image.makeFromEncoded(toByteArray(it)).asImageBitmap()
+            image = org.jetbrains.skia.Image.makeFromEncoded(toByteArray(it)).asImageBitmap()
         }
     }
 
@@ -124,7 +124,7 @@ fun DogList(dogs: List<Dog>) {
 
     LazyVerticalGrid(
         contentPadding = PaddingValues(horizontal = 16.dp, vertical = 8.dp),
-                cells = GridCells.Adaptive(300.dp)
+        cells = GridCells.Adaptive(300.dp)
     ) {
         items(
             items = dogs,
@@ -144,7 +144,7 @@ fun PuppyListItem(dog: Dog) {
             shape = RoundedCornerShape(corner = CornerSize(16.dp))
 
         ) {
-            Column (    horizontalAlignment = Alignment.CenterHorizontally){
+            Column(horizontalAlignment = Alignment.CenterHorizontally) {
                 val image = fetchImage(dog.imageUrl)
 
                 image?.let {
@@ -160,12 +160,14 @@ fun PuppyListItem(dog: Dog) {
                     )
                 }
 
-                    Text(text = dog.breed, style = MaterialTheme.typography.h6)
-                    Text(text = dog.rating, style = MaterialTheme.typography.caption)
+                Text(text = dog.breed, style = MaterialTheme.typography.h6)
+                Text(text = dog.rating, style = MaterialTheme.typography.caption)
+                Text(text = dog.timestamp, style = MaterialTheme.typography.caption)
 
-                }
+
             }
-
         }
+
+    }
 
 }

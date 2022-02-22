@@ -2,24 +2,26 @@ package com.surrus.common.network.models
 
 import com.surrus.common.domain.Dog
 import com.surrus.common.domain.util.DomainMapper
+import com.surrus.common.repository.timestamp
 
 class DogDtoMapper : DomainMapper<String, Dog> {
+
+    fun toDomainList(dogUrls: List<String>): List<Dog> {
+        return dogUrls.map { mapToDomainModel(it) }
+    }
 
     override fun mapToDomainModel(url: String): Dog {
         return Dog(
             breed = extractBreedName(url = url),
             rating = (10..20).random().toString() + "/10",
-            imageUrl = url
+            imageUrl = url,
+            timestamp = timestamp()
         )
     }
 
     private fun extractBreedName(url: String): String {
         val breedName = url.substringAfter("breeds/").substringBefore("/")
         return breedName.replace(Regex("-"), " ").capitalize()
-    }
-
-    fun toDomainList(initial: List<String>): List<Dog> {
-        return initial.map { mapToDomainModel(it) }
     }
 
 

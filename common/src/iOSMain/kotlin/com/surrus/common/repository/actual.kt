@@ -1,16 +1,14 @@
 package com.surrus.common.repository
 
-//import com.squareup.sqldelight.drivers.native.NativeSqliteDriver
-//import com.surrus.common.di.PeopleInSpaceDatabaseWrapper
-//import com.surrus.peopleinspace.db.PeopleInSpaceDatabase
-//import io.ktor.client.engine.ios.*
-//import org.koin.dsl.module
+import platform.Foundation.NSCalendar
+import platform.Foundation.NSCalendarUnitHour
+import platform.Foundation.NSCalendarUnitMinute
+import platform.Foundation.NSDate
 
+actual fun timestamp(): String {
+    val dateNow = NSDate()
+    val calendar = NSCalendar.currentCalendar()
+    val date = calendar.components(NSCalendarUnitHour or NSCalendarUnitMinute , fromDate = dateNow)
+    return "${date.hour} : ${date.minute}"
 
-//actual fun platformModule() = module {
-//    single {
-//        val driver = NativeSqliteDriver(PeopleInSpaceDatabase.Schema, "peopleinspace.db")
-////        PeopleInSpaceDatabaseWrapper(PeopleInSpaceDatabase(driver))
-//    }
-//    single { Ios.create() }
-//}
+}
